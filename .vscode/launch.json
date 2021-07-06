@@ -1,0 +1,17 @@
+{
+    "configurations": [
+        {
+            "address": "localhost",
+            "localRoot": "${workspaceFolder}",
+            "name": "Launch Debug",
+            "port": 9229,
+            "remoteRoot": "/usr/src/app",
+            "request": "attach",
+            "skipFiles": [
+                "<node_internals>/**"
+            ],
+            "type": "pwa-node"
+        }
+
+    ]
+}

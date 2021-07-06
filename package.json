@@ -1,0 +1,22 @@
+{
+  "name": "random_phrases",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@gitlab.com/scripts-utilitaires/random_phrases.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://gitlab.com/scripts-utilitaires/random_phrases/issues"
+  },
+  "homepage": "https://gitlab.com/scripts-utilitaires/random_phrases#readme",
+  "dependencies": {
+    "express": "^4.17.1"
+  }
+}
