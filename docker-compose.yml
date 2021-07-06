@@ -1,0 +1,14 @@
+version: '3.4'
+
+services:
+  ra_pha:
+    container_name: ran_pha
+    image: ra_pha
+    volumes: 
+      - .:/usr/src/app
+    build:
+      context: .
+      target: base
+    ports:
+      - 3000:3000
+    command: ["npm", "start"]
