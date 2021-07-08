@@ -27,12 +27,13 @@ ENV NODE_ENV=development
 
 # Installing dev dependencies
 RUN npm install -g nodemon
+RUN npm install -g eslint
 
 # With docker-compose, this port will be overridden.
 EXPOSE 3000 9229
 
 # With docker-compose, this entry point will be overridden.
-CMD ["nodemon", "--inspect=0.0.0.0:9229", "app.js"]
+CMD ["npm", "run", "debug"]
 
 
 #####################
@@ -46,4 +47,4 @@ ENV NODE_ENV=production
 EXPOSE 3000
 
 # With docker-compose, this entry point will be overridden.
-CMD ["npm", "start"]
+CMD ["npm", "run", "start"]

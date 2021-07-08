@@ -7,7 +7,7 @@ services:
       target: production
     environment:
       NODE_ENV: production
-    command: ["npm", "start"]
+    command: ["npm", "run", "start"]
     restart: always
     env_file: .env.production
 
