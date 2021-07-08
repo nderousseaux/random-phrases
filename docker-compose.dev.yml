@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  ra_pha:
+    image: ra_pha_dev
+    build:
+      target: dev
+    environment:
+      NODE_ENV: development
+    ports:
+      - 9229:9229
+    command: ["npm", "run", "debug"]
+    env_file: .env.dev
