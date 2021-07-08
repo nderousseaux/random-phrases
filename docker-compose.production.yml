@@ -1,0 +1,13 @@
+version: '3.4'
+
+services:
+  ra_pha:
+    image: ra_pha_prod
+    build:
+      target: production
+    environment:
+      NODE_ENV: production
+    command: ["npm", "run", "start"]
+    restart: always
+    env_file: .env.production
+
