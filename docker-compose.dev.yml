@@ -9,5 +9,5 @@ services:
       NODE_ENV: development
     ports:
       - 9229:9229
-    command: ["nodemon", "--inspect=0.0.0.0:9229", "app.js"]
+    command: ["npm", "run", "debug"]
     env_file: .env.dev

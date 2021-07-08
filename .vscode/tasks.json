@@ -28,5 +28,11 @@
 			  ]
 			}
 		},
+		{
+			"label": "Lint dev",
+			"type": "shell",
+			"command": "docker-compose -f docker-compose.yml -f docker-compose.dev.yml run --rm ra_pha npm run lint",
+			"problemMatcher": ["$eslint-stylish"]
+		}	  
 	]
 }
