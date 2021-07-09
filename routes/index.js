@@ -8,7 +8,6 @@ router.get('/', function (req, res) {
   let i = 0
 
   // Testing the consistency of query param
-
   if (minLength > maxLength) {
     return res.status(400).json(
       { error: 'minLength cannot be upper than maxLength' }
@@ -21,7 +20,7 @@ router.get('/', function (req, res) {
     i += 1
 
     // If no sentence was found
-    if (i > 10000) {
+    if (i > 100000) {
       return res.status(400).json(
         { error: 'no sentence was found' }
       )
