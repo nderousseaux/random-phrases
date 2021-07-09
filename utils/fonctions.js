@@ -2321,6 +2321,4 @@ function probaSwitch(tabValeurs, tabPoids) {
   return null;
 }
 
-module.exports={
-  phrase: Phrase
-}
+module.exports=Phrase
