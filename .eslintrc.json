@@ -11,5 +11,7 @@
         "sourceType": "module"
     },
     "rules": {
+        "no-extend-native":"off",
+        "no-unmodified-loop-condition":"off"
     }
 }
