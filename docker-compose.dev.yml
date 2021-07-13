@@ -10,4 +10,3 @@ services:
     ports:
       - 9229:9229
     command: ["npm", "run", "debug"]
-    env_file: .env.dev
