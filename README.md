@@ -7,14 +7,14 @@
 - Lancer l'application :
 ```shell
 #Développement
-$ docker-compose --build up
+$ docker-compose up --build
 
 #Debug
-$ docker-compose --build -f docker-compose.yml -f docker-compose.debug.yml up
+$ docker-compose -f docker-compose.yml -f docker-compose.debug.yml up --build
 
 #Linter
-$ docker-compose --build -f docker-compose.yml -f docker-compose.debug.yml run ra_pha npm run lint
+$ docker-compose -f docker-compose.yml -f docker-compose.debug.yml run ra_pha npm run lint
 
 #Production
-$ docker-compose --build -f docker-compose.yml -f docker-compose.production.yml up
+$ docker-compose -f docker-compose.yml -f docker-compose.production.yml up --build
 ```
