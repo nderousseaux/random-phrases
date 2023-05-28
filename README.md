@@ -18,3 +18,9 @@ $ docker-compose -f docker-compose.yml -f docker-compose.debug.yml run ra_pha np
 #Production
 $ docker-compose -f docker-compose.yml -f docker-compose.production.yml up --build
 ```
+
+## Route de l'api
+
+```
+GET /?min_length&max_length
+```
